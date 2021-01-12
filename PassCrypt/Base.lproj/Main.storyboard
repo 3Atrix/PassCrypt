@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zHM-e4-SHo">
+                                <rect key="frame" x="25" y="69" width="364" height="718"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input text for encryption/decryption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-WU-GeV">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="input_text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FDa-YR-Gp2">
+                                        <rect key="frame" x="0.0" y="30.5" width="364" height="203"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="tW7-gN-qNs">
+                                        <rect key="frame" x="0.0" y="243.5" width="364" height="124"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wyb-2n-Z9Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <action selector="TextField_DidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="XnZ-9n-tBS"/>
+                                                    <action selector="TextField_DidEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="TAQ-PE-oAy"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mne-3X-IDY">
+                                                <rect key="frame" x="0.0" y="45" width="364" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <action selector="TextField_DidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="jb9-Fu-cZD"/>
+                                                    <action selector="TextField_DidEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="zhR-Hn-Exz"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6F7-eH-8To">
+                                                <rect key="frame" x="0.0" y="90" width="364" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <action selector="TextField_DidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="lDT-tL-QYH"/>
+                                                    <action selector="TextField_DidEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="YRU-JP-yrU"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MIm-ui-60q">
+                                        <rect key="frame" x="0.0" y="377.5" width="364" height="340.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wMB-3i-ldg">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="190.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c6-ko-Icu">
+                                                        <rect key="frame" x="0.0" y="85" width="82" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jMb-Ve-cUM">
+                                                        <rect key="frame" x="105" y="80" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switch_click_show_pass:" destination="BYZ-38-t0r" eventType="valueChanged" id="bEx-vY-itu"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="｜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCH-Ls-w4b">
+                                                        <rect key="frame" x="176.5" y="85" width="17.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyG-Dh-OW5">
+                                                        <rect key="frame" x="217" y="85" width="75.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8u2-Ho-ZJr">
+                                                        <rect key="frame" x="315" y="80" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switch_click_show_text:" destination="BYZ-38-t0r" eventType="valueChanged" id="fau-Jb-ZqH"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IyE-PL-NF6">
+                                                <rect key="frame" x="0.0" y="210.5" width="364" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WB-oB-Zh7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                        <state key="normal" title="Encrypt"/>
+                                                        <connections>
+                                                            <action selector="btn_click_encrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwr-SW-fcl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXi-Dk-808">
+                                                        <rect key="frame" x="143.5" y="0.0" width="75" height="30"/>
+                                                        <state key="normal" title="Clean pass"/>
+                                                        <connections>
+                                                            <action selector="btn_click_clean_passes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RvM-sT-bt8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlA-y1-tXA">
+                                                        <rect key="frame" x="309" y="0.0" width="55" height="30"/>
+                                                        <state key="normal" title="Decrypt"/>
+                                                        <connections>
+                                                            <action selector="btn_click_decrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSE-Jr-HIA"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qHc-mG-uA3">
+                                                <rect key="frame" x="0.0" y="260.5" width="364" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4L-7W-6tr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                                        <state key="normal" title="Encrypt files"/>
+                                                        <connections>
+                                                            <action selector="btn_click_encrypt_file:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Sv-7M-Ci8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8P-v3-W68">
+                                                        <rect key="frame" x="121" y="0.0" width="121" height="30"/>
+                                                        <state key="normal" title="Clean pasteboard"/>
+                                                        <connections>
+                                                            <action selector="btn_click_clean_pasteboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QrI-64-jld"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-xL-9VZ">
+                                                        <rect key="frame" x="277" y="0.0" width="87" height="30"/>
+                                                        <state key="normal" title="Decrypt files"/>
+                                                        <connections>
+                                                            <action selector="btn_click_decrypt_file:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ioo-1G-C9h"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgy-Pw-JzH">
+                                                <rect key="frame" x="0.0" y="310.5" width="364" height="30"/>
+                                                <state key="normal" title="Exit"/>
+                                                <connections>
+                                                    <action selector="btn_click_exit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRE-dj-QJk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zHM-e4-SHo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="1kc-Z8-0PB"/>
+                            <constraint firstItem="zHM-e4-SHo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="EQf-bh-4hJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zHM-e4-SHo" secondAttribute="trailing" constant="25" id="Rrl-ie-diT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zHM-e4-SHo" secondAttribute="bottom" constant="75" id="wHN-1x-1Ha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_clean_passes" destination="AXi-Dk-808" id="ZPy-a3-ZaX"/>
+                        <outlet property="btn_clean_pasteboard" destination="L8P-v3-W68" id="c8C-GA-mMs"/>
+                        <outlet property="btn_decrypt" destination="KlA-y1-tXA" id="a0G-Ch-6yz"/>
+                        <outlet property="btn_decrypt_file" destination="OoD-xL-9VZ" id="kva-bM-897"/>
+                        <outlet property="btn_encrypt" destination="6WB-oB-Zh7" id="7k2-uU-ulK"/>
+                        <outlet property="btn_encrypt_file" destination="S4L-7W-6tr" id="Ghc-OY-wBL"/>
+                        <outlet property="btn_exit" destination="kgy-Pw-JzH" id="eCG-l2-4RA"/>
+                        <outlet property="input_text_view" destination="FDa-YR-Gp2" id="pHp-Dx-AEs"/>
+                        <outlet property="label_msg" destination="Fnx-WU-GeV" id="p4k-YJ-TCc"/>
+                        <outlet property="pass_1" destination="Wyb-2n-Z9Y" id="mvn-xc-Wsw"/>
+                        <outlet property="pass_2" destination="mne-3X-IDY" id="XRP-PC-M9W"/>
+                        <outlet property="pass_3" destination="6F7-eH-8To" id="Ayp-im-hkt"/>
+                        <outlet property="switch_show_pass" destination="jMb-Ve-cUM" id="Ylc-uk-3KV"/>
+                        <outlet property="switch_show_text" destination="8u2-Ho-ZJr" id="5Mi-fj-lYp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

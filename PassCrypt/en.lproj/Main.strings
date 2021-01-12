@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Encrypt"; ObjectID = "6WB-oB-Zh7"; */
+"6WB-oB-Zh7.normalTitle" = "Encrypt";
+
+/* Class = "UILabel"; text = "Show pass"; ObjectID = "9c6-ko-Icu"; */
+"9c6-ko-Icu.text" = "Show pass";
+
+/* Class = "UIButton"; normalTitle = "Clean pass"; ObjectID = "AXi-Dk-808"; */
+"AXi-Dk-808.normalTitle" = "Clean pass";
+
+/* Class = "UILabel"; text = "Please input text for encryption/decryption"; ObjectID = "Fnx-WU-GeV"; */
+"Fnx-WU-GeV.text" = "Input text for encryption/decryption";
+
+/* Class = "UIButton"; normalTitle = "Decrypt"; ObjectID = "KlA-y1-tXA"; */
+"KlA-y1-tXA.normalTitle" = "Decrypt";
+
+/* Class = "UIButton"; normalTitle = "Clean pasteboard"; ObjectID = "L8P-v3-W68"; */
+"L8P-v3-W68.normalTitle" = "Clean pasteboard";
+
+/* Class = "UIButton"; normalTitle = "Decrypt files"; ObjectID = "OoD-xL-9VZ"; */
+"OoD-xL-9VZ.normalTitle" = "Decrypt files";
+
+/* Class = "UIButton"; normalTitle = "Encrypt files"; ObjectID = "S4L-7W-6tr"; */
+"S4L-7W-6tr.normalTitle" = "Encrypt files";
+
+/* Class = "UILabel"; text = "｜"; ObjectID = "ZCH-Ls-w4b"; */
+"ZCH-Ls-w4b.text" = "｜";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "kgy-Pw-JzH"; */
+"kgy-Pw-JzH.normalTitle" = "Exit";
+
+/* Class = "UILabel"; text = "Show text"; ObjectID = "vyG-Dh-OW5"; */
+"vyG-Dh-OW5.text" = "Show text";

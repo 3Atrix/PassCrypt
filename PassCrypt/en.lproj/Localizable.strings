@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  gomobile_demo
+
+  Created by android on 2021/1/12.
+  Copyright © 2021 android. All rights reserved.
+*/
+
+"ciphertext_cant_empty" = "The ciphertext can't be empty";
+"ciphertext_is_hidden_and_decrypt" = "The ciphertext is hidden, please decrypt it";
+"text_is_hidden_and_not_editable" = "The text has been hidden and not editable";
+"encrypting_or_decrypting_and_wait" = "Encrypting/decrypting, wait a moment";
+"text_cant_empty" = "The text can't be empty";
+"at_lease_one_pass" = "Please input one password at lease";
+"encrypting___" = "Encrypting ...";
+"hidden_ciphertext_copyed_into_pasteboard" = "Hidden ciphertext is copyed into pasteboard";
+"decrypting___" = "Decrypting ...";
+"plaintext_hidden" = "The plaintext is hidden";
+"not_existed" = " not existed";
+"Encrypted_files_in" = "Encrypted files in : ";
+"directory_empty_not_encrypt" = " is empty, no encryption";
+"Decrypted_files_in" = "Decrypted files in : ";
+"directory_empty_not_decrypt" = " is empty, no decryption";
+"passwords_clean" = "Passwords clean";
+"pasteboard_clean" = "Pasteboard clean";
+"input_text_for_encryption_or_decryption" = "Input text for encryption/decryption";
