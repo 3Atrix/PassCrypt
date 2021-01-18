@@ -11,15 +11,11 @@
 #include "Universe.objc.h"
 
 
-FOUNDATION_EXPORT NSData* _Nullable A1A3_decrypt_bytes(NSData* _Nullable src, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3);
-
 FOUNDATION_EXPORT int32_t A1A3_decrypt_dir_to_dir(NSString* _Nullable src_path, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3, NSString* _Nullable dest_path);
 
 FOUNDATION_EXPORT void A1A3_decrypt_file_to_file(NSString* _Nullable src_path, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3, NSString* _Nullable dest_path);
 
 FOUNDATION_EXPORT NSString* _Nonnull A1A3_decrypt_str(NSString* _Nullable src, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3);
-
-FOUNDATION_EXPORT NSData* _Nullable A1A3_encrypt_bytes(NSData* _Nullable src, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3);
 
 FOUNDATION_EXPORT int32_t A1A3_encrypt_dir_to_dir(NSString* _Nullable src_path, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3, NSString* _Nullable dest_path);
 
