@@ -23,6 +23,10 @@ FOUNDATION_EXPORT void A1A3_encrypt_file_to_file(NSString* _Nullable src_path, N
 
 FOUNDATION_EXPORT NSString* _Nonnull A1A3_encrypt_str(NSString* _Nullable src, NSString* _Nullable pass_1, NSString* _Nullable pass_2, NSString* _Nullable pass_3);
 
+FOUNDATION_EXPORT NSData* _Nullable A1FileReadFile(NSString* _Nullable path);
+
+FOUNDATION_EXPORT BOOL A1FileWriteFile(NSString* _Nullable path, NSData* _Nullable src);
+
 FOUNDATION_EXPORT void A1Util_clear_dir(NSString* _Nullable path);
 
 #endif
